@@ -1,6 +1,5 @@
-var vAny = 10;
-var vUnknow = 10;
-var s1 = vAny;
-var s2 = vUnknow;
-var pageNumber = "1";
-var numericPageNumber = pageNumber;
+var someElement = document.querySelector(".foo");
+someElement.addEventListener("blur", function (event) {
+    var target = event.target;
+    console.log("event", target.value);
+});
